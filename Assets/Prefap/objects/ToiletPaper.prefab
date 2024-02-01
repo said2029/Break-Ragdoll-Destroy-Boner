@@ -10,8 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 914796197102007168}
   - component: {fileID: 574722321216235835}
-  - component: {fileID: 574722321216235832}
-  - component: {fileID: 574722321216235833}
+  - component: {fileID: 4484355746727952638}
   m_Layer: 0
   m_Name: ToiletPaper
   m_TagString: Untagged
@@ -28,7 +27,7 @@ Transform:
   m_GameObject: {fileID: 574722321216235834}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 40.447002, y: 11.206, z: 2.7719}
-  m_LocalScale: {x: 1.2475, y: 1.2475, z: 1.2475}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1107694860773049648}
@@ -51,23 +50,8 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 56
   m_CollisionDetection: 0
---- !u!114 &574722321216235832
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 574722321216235834}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 902b9fc35e327ee468322751562bcecd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  limitx: 0
-  limity: 0
-  limitz: 1
---- !u!64 &574722321216235833
-MeshCollider:
+--- !u!65 &4484355746727952638
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -76,10 +60,9 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 3596191092224140292, guid: fe0f7f553e0552a4dad55a13172d0b09, type: 3}
+  serializedVersion: 2
+  m_Size: {x: 1.5916023, y: 1.2736673, z: 1}
+  m_Center: {x: -0.73978615, y: -0.6489463, z: 0}
 --- !u!1 &6189843290314087826
 GameObject:
   m_ObjectHideFlags: 0
@@ -91,7 +74,6 @@ GameObject:
   - component: {fileID: 1107694860773049648}
   - component: {fileID: 4012284452075980133}
   - component: {fileID: 576630612132922716}
-  - component: {fileID: 808601974195475542}
   m_Layer: 0
   m_Name: Cart
   m_TagString: Untagged
@@ -107,8 +89,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6189843290314087826}
   m_LocalRotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
-  m_LocalPosition: {x: 0.60032046, y: 1.0398775, z: -4.8563743}
-  m_LocalScale: {x: 100, y: 100, z: 100}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 145.07999, y: 145.07999, z: 145.07999}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 914796197102007168}
@@ -164,17 +146,3 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &808601974195475542
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6189843290314087826}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 3596191092224140292, guid: fe0f7f553e0552a4dad55a13172d0b09, type: 3}

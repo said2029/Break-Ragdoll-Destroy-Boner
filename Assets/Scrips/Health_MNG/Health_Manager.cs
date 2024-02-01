@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 
 public class Health_Manager : MonoBehaviour
@@ -6,16 +7,28 @@ public class Health_Manager : MonoBehaviour
     [SerializeField] Material Death;
     [SerializeField] SkinnedMeshRenderer bodySkin;
 
+
+
     public void TakeDamage(float value)
     {
         Health -= value;
         if (Health < 0)
         {
             bodySkin.material = Death;
+            if (!GameManager.instance.is_Player_Death)
+            {
+                Handheld.Vibrate();
+                StartCoroutine(UI_Manager.instance.NextLevel());
+            }
+            GameManager.instance.is_Player_Death = true;
+
             // death
+
         }
 
+
     }
+
 
 
 }
