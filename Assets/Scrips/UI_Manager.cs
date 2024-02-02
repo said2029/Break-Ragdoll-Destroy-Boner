@@ -44,12 +44,14 @@ public class UI_Manager : MonoBehaviour
     }
     public void reloadScnce()
     {
+        Ads_ManagerGL.instance.ShowAds();
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 
 
     public IEnumerator NextLevel()
     {
+        Ads_ManagerGL.instance.ShowAds();
         yield return new WaitForSeconds(4);
 
         GameManager.instance.level += 1;
@@ -86,6 +88,7 @@ public class UI_Manager : MonoBehaviour
 
     public void PlaySound(int index)
     {
+        Ads_ManagerGL.instance.ShowAdsCount();
         sound_Manager.Play(index);
     }
 

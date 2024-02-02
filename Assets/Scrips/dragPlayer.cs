@@ -16,7 +16,7 @@ public class dragPlayer : MonoBehaviour
 
     private void Start()
     {
-        LimitValue.z=PlayerLimit_Z.position.z;
+        LimitValue.z = PlayerLimit_Z.position.z;
         SetValueToRig(positionSpring);
     }
     private void Update()
@@ -29,7 +29,15 @@ public class dragPlayer : MonoBehaviour
     public void Drag()
     {
         SetValueToRig(20);
+        if (!GameManager.instance.is_Player_Death)
+            StartCoroutine(RestartRigs());
 
+    }
+
+    IEnumerator RestartRigs()
+    {
+        yield return new WaitForSeconds(2);
+        SetValueToRig(4000);
     }
 
     void LimitPlayer()

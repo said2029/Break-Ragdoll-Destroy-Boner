@@ -258,7 +258,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Can_Follow: 1
   Traget: {fileID: 3742407836292114579}
-  offset: {x: -0.72, y: 2, z: 8.43}
+  offset: {x: -0.72, y: 1.01, z: 5.97}
   SmoothMove: 10
 --- !u!1 &410087039
 GameObject:
@@ -634,7 +634,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 314337847b38a534193b392609447382, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  positionSpring: 100
+  positionSpring: 4000
   PlayerLimit_Z: {fileID: 3742407836292114579}
   LimitValue: {x: 0, y: 0, z: -3.65}
   configurableJoints:
