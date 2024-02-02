@@ -36,7 +36,7 @@ public class dragPlayer : MonoBehaviour
 
     IEnumerator RestartRigs()
     {
-        yield return new WaitForSeconds(2);
+        yield return new WaitForSeconds(7);
         SetValueToRig(4000);
     }
 
@@ -50,7 +50,7 @@ public class dragPlayer : MonoBehaviour
 
 
 
-    void SetValueToRig(int value)
+    public void SetValueToRig(int value)
     {
         foreach (var conf in configurableJoints)
         {

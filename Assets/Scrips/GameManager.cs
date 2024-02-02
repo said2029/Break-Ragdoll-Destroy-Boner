@@ -35,6 +35,16 @@ public class GameManager : MonoBehaviour
 
         UI_Manager.instance.Settext();
 
+        if (PlayerPrefs.HasKey("GDPR"))
+        {
+            if (PlayerPrefs.GetInt("GDPR") == 0)
+                StartGameEvint();
+        }
+
+    }
+
+    public void StartGameEvint()
+    {
         StartCoroutine(StartGame());
     }
 
